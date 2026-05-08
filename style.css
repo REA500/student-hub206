@@ -1,0 +1,339 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url(image\ \(1\).png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* keeps image still when scrolling */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #be91e49f;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fffffc;
+}
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(Blog-Image-10.jpeg);
+    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+ form {
+  display: flex;           /* added : */
+  flex-direction: column;  /* added : */
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+/* Banner at the top */
+.page-banner {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.page-banner h2 {
+  font-size: 42px;
+  color: #fffffc; /* NWU gold */
+  margin-bottom: 10px;
+}
+
+/* Container for the cards - keeps them centered */
+.help-options {
+  max-width: 700px; /* controls how wide the stack is */
+  margin: 0 auto;   /* centers it on the page */
+  padding: 40px 20px 80px;
+}
+
+/* Each individual card */
+.card {
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent white */
+  backdrop-filter: blur(8px);            /* frosted glass effect */
+  padding: 35px 40px;                    /* space inside the card */
+  margin-bottom: 25px;                   /* space BETWEEN cards */
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  color: #fdfdfc; /* gold heading */
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #f1f1f1;
+  line-height: 1.7; /* space between lines of text */
+  font-size: 16px;
+}
+
+/* Remove margin from last card */
+.card:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* Banner at the top */
+.page-banner {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.page-banner h2 {
+  font-size: 42px;
+  color: #fcfaf3; /* NWU gold */
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.page-banner p {
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+/* Container for the resource cards */
+.resources-container {
+  max-width: 900px; /* controls how wide the stack is */
+  margin: 0 auto;   /* centers it on the page */
+  padding: 40px 20px 80px;
+  display: grid;    /* grid gives you cleaner spacing than flex for this */
+  gap: 30px;        /* space BETWEEN each card */
+}
+
+/* Each individual resource box */
+.resource-box {
+  background: rgba(255, 255, 255, 0.12); /* semi-transparent white */
+  backdrop-filter: blur(10px);           /* frosted glass effect */
+  padding: 30px 35px;                    /* space inside the box */
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resource-box:hover {
+  transform: translateY(-5px); /* lifts the card slightly on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.resource-box h3 {
+  color: #fcfbfa; /* gold heading */
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.resource-box p {
+  color: #f1f1f1;
+  line-height: 1.7; /* space between lines of text */
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+/* Contact table styling */
+.contact-section {
+  max-width: 950px;
+  margin: 80px auto; /* 80px space above the table */
+  padding: 0 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #fffefa; /* gold heading */
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-subtext {
+  color: #f1f1f1;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: separate; /* allows space between rows */
+  border-spacing: 0 15px; /* 15px space between each row */
+  background: rgba(255, 255, 255, 0.12); /* see-through white background */
+  backdrop-filter: blur(12px); /* frosted glass effect */
+  border-radius: 15px;
+  padding: 20px; /* space inside the table box */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.contact-table th {
+  background: rgba(255, 215, 0, 0.25); /* light gold header */
+  color: #faf9f5;
+  padding: 18px 25px; /* space inside header cells */
+  text-align: left;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.contact-table td {
+  padding: 20px 25px; /* space inside each cell */
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.2); /* dark background so text is readable */
+  font-size: 16px;
+  line-height: 1.6; /* space between campus and building lines */
+}
+
+.contact-table tr td:first-child {
+  border-radius: 10px 0 0 10px; /* rounded left corners */
+}
+.contact-table tr td:last-child {
+  border-radius: 0 10px 10px 0; /* rounded right corners */
+}
+
+.contact-table a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.help-options .card ul {
+  margin: 10px 0 0 20px;
+  color: white;
+}
+
+.help-options .card li {
+  margin-bottom: 8px;
+}
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 30px 5%;
+  text-align: center;
+}
+
+.about-footer {
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+.about-footer h2 {
+  color: #f0efee;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.about-footer p {
+  color: white;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* spreads items: left, center, right */
+  align-items: center;
+  background: #8C52FF; /* your purple nav color */
+  padding: 10px 5%;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px; /* space between the 4 menu options */
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-menu a:hover {
+  color: #f8f8f8; /* NWU gold hover color */
+}
+
+.search-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.search-bar select, 
+.search-bar button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background: #fffffe;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 80px; /* adjust this to make logo bigger or smaller */
+  width: auto;
+}
